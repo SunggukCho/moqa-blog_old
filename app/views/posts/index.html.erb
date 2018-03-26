@@ -1,0 +1,48 @@
+<p id="notice"><%= notice %></p>
+	<div id="blog" class="section md-padding bg-grey">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- Section header -->
+				<div class="section-header text-center col-md-12">
+					<h2 class="title">Recents news</h2>
+				</div>
+				<!-- /Section header -->
+
+				<!-- blog -->
+      
+          <% @posts.each do |post| %>
+          <div class="col-md-4">
+      			<div class="blog">
+      				<div class="blog-img">
+                <% if post.image.url %> 
+      					  <img class="img-responsive" src="<%= post.image.url %>" alt="">
+                <% end %> 
+              </div>
+              <div class="blog-content">
+      					<ul class="blog-meta">
+      					  <li><i class="fa fa-user"></i><%= post.name %> </li>
+      					</ul>
+      					<h3><%= post.title %></h3>
+      					<p><%= post.content %> </p>
+      					<a href="blog-single.html">Read more</a>
+               
+               <%= link_to 'Show', post, class: "editors" %> 
+               <%= link_to 'Edit', edit_post_path(post), class: "editors" %> 
+               <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }, class: "editors" %> 
+  
+        			</div>
+        		</div>
+      		</div>
+          <% end %>      
+          
+		  	</div>
+  		</div>
+		</div>      		
+<br>
+
+<%= link_to 'New Post', new_post_path %>
