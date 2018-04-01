@@ -545,6 +545,30 @@ p {
 .single-special p {
     margin-bottom: 0;
 }
+// carousel outer frame
+.carousel-frame{
+    display: flex;
+    justify-content: center;
+    max-width: 300px;
+    height: 600px;
+}
+.carousel-outer{
+    background-image: url('phoneFrame.png');
+    justify-content: center;
+    width: 300px;
+    height: 600px;
+    position: absolute;
+    background-position: center;
+    padding-top: 60px;
+    padding-left: 10px;
+}
+.special_description_img{
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    justify-content: center;
+    align-items: center;
+}
 
 .app-download-area {
     display: -moz-flex;
@@ -1015,6 +1039,7 @@ p {
 }
 
 .get-started-button > a {
+    font-size: 14px;
     background: #ffffff;
     height: 45px;
     min-width: 140px;

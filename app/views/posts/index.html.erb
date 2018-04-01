@@ -1,5 +1,5 @@
 <%= render 'navbar' %>
-	<div id="blog" class="section md-padding bg-grey">
+	<div id="blog" class="section md-padding bg-white">
 		<!-- Container -->
 		<div class="container" id="post-body">
 			<!-- Row -->
@@ -16,18 +16,16 @@
 		  		  	<div class="blog-card">
 		  		  		<div class="blog-box">
 				  			<div class="blog-img">
-					            <% if post.image.url %> 
-					  			    <img class="img-responsive" src="<%= post.image.url %>" alt="postImg">
+					            <% if post.image.url %>
+					            	<img class="img-responsive" src="<%= post.image.url %>" alt="postImg">
 					  			<% else %>
 					  				<img class="img-responsive" src="vacancy.png" alt="noImg">
 					            <% end %> 
 				         	</div>
 					         <div class="blog-content">
-					  			<!--<ul class="blog-meta">-->
-					  			<!--  <li><i class="fa fa-user"></i><%#= post.name %> </li>-->
-					  			<!--</ul>-->
-					  			<%#= post.title %>
-					  			<%= link_to post.title, post, class: "blog-title" %>
+					  			<div class="blog-title">
+					  				<h3><%= link_to post.title, post %></h3>
+					  			</div>
 					  			<p><%= post.content %></p>
 					           
 					            <%= link_to 'Show', post, class: "editors" %> 

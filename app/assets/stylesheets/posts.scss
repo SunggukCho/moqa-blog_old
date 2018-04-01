@@ -646,6 +646,9 @@ header {
     margin-top: 0px;
     margin: 0 auto;
 }
+.blog a{
+    color: #959595;
+}
 .blog-card{
     margin-top: 0px;
     margin: 0 auto;
@@ -657,11 +660,11 @@ header {
 }
 .blog-img{
     width: 300px;
-    height: 300px;
+    height: 200px;
     display: flex;
 }
-.blog .blog-content {
-    padding: 20px 20px 40px;
+.blog > .blog-content {
+    padding: 20px 20px 40px 20px;
 }
 
 .blog-content-post{
@@ -675,13 +678,13 @@ header {
     color: #959595 !important;
     display: flex;
 }
-.blog> .blog-box > .blog-content> .blog-title{
-    font-size: 21px;
-    color: #000 !important;
+.blog-box > .blog-content > .blog-title{
+    // margin-top: 10px;
+    font-size: 21px !important;
 }
-.blog>  .blog-box > .blog-content> .blog-title:hover{
+.blog-box > .blog-content> .blog-title:hover{
     font-size: 21px;
-    color: #007bff !important;
+    color: #007bff;
 }
 
 .blog .blog-meta {
@@ -716,7 +719,8 @@ header {
 	Blog pagination
 \*------------------------------------*/
 .pagination {
-    display: flex;
+    display: flex !important;
+    width: 100%;
     justify-content: center;
     margin-top: 15px;
     font-size: 18px;
@@ -727,6 +731,7 @@ header {
 .pagination > span{
     margin-left: 10px;
     margin-right: 10px;
+    justify-content: center;
 }
 .pagination > span > a{
     color: #959595 !important;
@@ -1116,10 +1121,10 @@ header {
 }
 
 .owl-theme .owl-dots .owl-dot:hover span {
-    background: #6195FF;
+    background: #999999;
 }
 .owl-theme .owl-dots .owl-dot.active span {
-	  background: #6195FF;
+	  background: #999999;
 	  width:20px;
 }
 
@@ -1132,7 +1137,7 @@ header {
 }
 
 .owl-theme:hover .owl-nav {
-    opacity: 1;
+    opacity: .3;
 }
 
 .owl-theme .owl-nav [class*='owl-'] {
@@ -1141,7 +1146,7 @@ header {
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
             transform: translateY(-50%);
-    background: #6195FF;
+    background: #999999;
     color: #FFF;
   	padding: 0px;
   	width: 50px;
@@ -1161,7 +1166,7 @@ header {
 
 .owl-theme .owl-nav [class*='owl-']:hover {
     opacity: 0.8;
-    background: #6195FF;
+    background: #999999;
 }
 
 

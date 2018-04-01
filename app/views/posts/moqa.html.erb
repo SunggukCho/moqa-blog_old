@@ -44,8 +44,7 @@
         </div>
     </div>
     <!-- Welcome thumb -->
-    <!-- 폰이미지 넣는 곳  -->
-
+    <!-- Main 이미지 넣는 곳  -->
     <div class="welcome-thumb wow fadeInDown" data-wow-delay="0.5s">
         <%= image_tag("moqa-main-img.png", :alt => "moqa-main") %>
     </div>
@@ -59,9 +58,30 @@
     <div class="special_description_area mt-150">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
-                    <div class="special_description_img">
-                        <%= image_tag("special.png", :alt => "special_1") %>
+                <div class="col-lg-6 carousel-frame">
+                    <div class="carousel-outer">
+                        <div class="special_description_img">
+                          <div id="carousel_1" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel_1" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel_1" data-slide-to="1" class=""></li>
+                                <li data-target="#carousel_1" data-slide-to="2" class=""></li>
+                            </ol>
+                              <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                  <%= image_tag("dualphone.png") %>
+                                </div>
+                                <div class="item">
+                                  <%= image_tag("dualphone.png")%>
+                                </div>
+                                <div class="item">
+                                  <%= image_tag("dualphone.png")%>
+                                </div>
+                              </div>
+                                <a class="left carousel-control" href="#carousel_1" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                                <a class="right carousel-control" href="#carousel_1" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>                  
+                          </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-xl-5 ml-xl-auto">
@@ -90,9 +110,30 @@
 
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="special_description_img">
-                        <%= image_tag("special.png", :alt => "special_2") %>
+                  <div class="col-lg-6 carousel-frame">
+                    <div class="carousel-outer">
+                        <div class="special_description_img">
+                          <div id="carousel_2" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel_2" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel_2" data-slide-to="1" class=""></li>
+                                <li data-target="#carousel_2" data-slide-to="2" class=""></li>
+                            </ol>
+                              <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                  <%= image_tag("dualphone.png") %>
+                                </div>
+                                <div class="item">
+                                  <%= image_tag("dualphone.png")%>
+                                </div>
+                                <div class="item">
+                                  <%= image_tag("dualphone.png")%>
+                                </div>
+                              </div>
+                                <a class="left carousel-control" href="#carousel_2" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                                <a class="right carousel-control" href="#carousel_2" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>                  
+                          </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -103,7 +144,6 @@
 
 <!-- ***** Special Area3 Area Start ***** -->
 <section class="special-area bg-white section_padding_100" id="screenshot">
-
     <div class="container-fluid">
         <div class="row">
             <div class="col-12">
@@ -111,16 +151,36 @@
     <div class="special_description_area">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
-                    <div class="special_description_img">
-                        <%= image_tag("special.png", :alt => "special_3") %>
+                <div class="col-lg-6 carousel-frame">
+                    <div class="carousel-outer">
+                        <div class="special_description_img">
+                          <div id="carousel_3" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel_3" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel_3" data-slide-to="1" class=""></li>
+                                <li data-target="#carousel_3" data-slide-to="2" class=""></li>
+                            </ol>
+                              <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                  <%= image_tag("dualphone.png") %>
+                                </div>
+                                <div class="item">
+                                  <%= image_tag("dualphone.png")%>
+                                </div>
+                                <div class="item">
+                                  <%= image_tag("dualphone.png")%>
+                                </div>
+                              </div>
+                                <a class="left carousel-control" href="#carousel_3" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                                <a class="right carousel-control" href="#carousel_3" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>                  
+                          </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-xl-5 ml-xl-auto">
                     <div class="special_description_content">
                         <h2>포인트도 더 쉽게! 더 많이!</h2>
                         <p>모카를 통해 얻은 포인트는 현금처럼 76개 브랜드에서 현금처럼 사용하실 수 있습니다.</p>
-
                     </div>
                 </div>
             </div>
@@ -141,7 +201,7 @@
             <div class="col-md-4">
                 <div class="get-started-area">
                     <div class="get-started-button wow bounceInDown" data-wow-delay="0.5s">
-                        <a href="#contact">문의하기</a>
+                        <a href="#">문의하기</a>
                     </div>
                 </div>                   
             </div> 
@@ -162,22 +222,20 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="owl-carousel owl-theme">
-                <div class="item"><h4>1</h4></div>
-                <div class="item"><h4>2</h4></div>
-                <div class="item"><h4>3</h4></div>
-                <div class="item"><h4>4</h4></div>
-                <div class="item"><h4>5</h4></div>
-                <div class="item"><h4>6</h4></div>
-                <div class="item"><h4>7</h4></div>
-                <div class="item"><h4>8</h4></div>
-                <div class="item"><h4>9</h4></div>
-                <div class="item"><h4>10</h4></div>
-                <div class="item"><h4>11</h4></div>
-                <div class="item"><h4>12</h4></div>
-            </div>
+    </div>
+    <!---->
+    <div class="container">  
+      <div class="row">
+        <div class="owl-carousel owl-theme" id="owl-partners">
+          <div class="item"><%= image_tag ('logo-SBG.jpg') %></div>
+          <div class="item"><%= image_tag ('logo-GlobalResearch.jpg') %></div>
+          <div class="item"><%= image_tag ('logo-dreamplus.png') %></div>
+          <div class="item"><%= image_tag ('logo-AWS.jpg') %></div>
+          <div class="item"><%= image_tag ('logo-kci.jpg') %></div>
         </div>
+      </div>
+    </div>
+    <!---->
     <!--Team carousel-->
 </section>
 <!-- ***** Our Team Area End ***** -->
@@ -283,4 +341,5 @@
         <p>Copyright ©2018 <a href="http://in-datalab.com" target="_blank">In-DataLAB Co., Ltd.</a></p>
     </div>
 </footer>
+
 <!-- ***** Footer Area Start ***** -->
