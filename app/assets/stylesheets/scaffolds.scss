@@ -166,13 +166,12 @@ ol {
     bottom: 0;
     font-size: 24px;
     right: 30px;
-    width: 50px;
+    width: 40px;
     background-color: rgba(0,0,0,.4);
     color: #fff;
     text-align: center;
-    height: 50px;
-    line-height: 50px;
-    border-radius: 10px 10px 10px 10px;
+    height: 40px;
+    line-height: 40px;
 }
 
 li {
@@ -387,6 +386,21 @@ p {
     padding: 0;
 }
 */
+// new Navbar
+.navbar{
+    margin-bottom: none !important;
+    border-bottom: 1px solid #ccc !important;
+}
+.navbar-nav{
+    margin-right: 50px !important;
+    float: none !important;
+    justify-content: center;
+}
+.navbar-nav>li{
+    margin-right: 30px;
+}
+
+
 
 /* --------------------------
 :: 3.0 Wellcome Area CSS
@@ -1164,17 +1178,6 @@ p {
     color: #494949;
 }
 
-.footer-contact-area .heading-text > p {
-    margin-top: 50px;
-}
-
-.footer-contact-area .heading-text {
-    margin-bottom: 50px;
-}
-.footer-contact-area .branch-heading > h2 {
-    font-color: #000000;
-}
-
 #name {
     font-size: 18px;
     padding: 15px 15px;
@@ -1206,81 +1209,6 @@ p {
     -webkit-transition-duration: 500ms;
     -o-transition-duration: 500ms;
     transition-duration: 500ms;
-}
-
-.footer-contact-area {
-    background: #f5f9fc;
-}
-
-.footer-text > p {
-    margin-bottom: 50px;
-}
-
-/* --------------------------
-:: 14.0 Footer Area CSS Start
--------------------------- */
-
-.footer-text > h2 {
-    color: #42c9a9;
-    font-size: 72px;
-    font-weight: 700;
-}
-
-.footer-social-icon > a > i {
-    background: #fff;
-    border: 0.5px solid;
-    font-size: 14px;
-    color: #726a84;
-    height: 40px;
-    width: 40px;
-    line-height: 40px;
-    font-weight: 500;
-    border-radius: 10px 10px 10px 10px;
-    margin-right: 10px;
-}
-
-.footer-social-icon > a > i:hover {
-    background: #00a68c;
-    border: 0.5px solid #00a68c;
-    color: #fff;
-    -webkit-transition-duration: 500ms;
-    -o-transition-duration: 500ms;
-    transition-duration: 500ms;
-}
-
-.social-icon {
-    margin-bottom: 30px;
-}
-
-.footer-text {
-    margin-bottom: 15px;
-}
-
-.footer-menu ul li {
-    display: inline-block;
-}
-
-.footer-menu ul li a {
-    border-right: 2px solid #726a84;
-    display: block;
-    padding: 0 7.5px;
-    color: #726a84;
-}
-
-.footer-social-icon > a .active {
-    background: #fb397d;
-}
-
-.footer-menu ul li:last-child a {
-    border-right: 0 solid #ddd;
-}
-
-.footer-social-icon {
-    margin-bottom: 30px;
-}
-
-.footer-menu {
-    margin-bottom: 15px;
 }
 
 .copyright-text > p {
@@ -1338,8 +1266,70 @@ p {
     border-color: transparent;
     background-color: #fb397d;
 }
+/* --------------------------
+:: 14.0 Footer
+-------------------------- */
+.footer-bar{
+    background-color: #f2f2f2;
+    height: 50px;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+.footer-left{
+    position: relative;
+    float: left;
+    padding: 16px;
+}
+.footer-right{
+    position: relative;
+    float: right;
+    margin: 0 auto;
+    padding: 16px;
+}
+.footer-social-icon > a > i {
+    background: #fff;
+    border: 0.5px solid;
+    font-size: 14px;
+    color: #aaa;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    font-weight: 500;
+    border-radius: 50%;
+    margin-right: 10px;
+}
 
+.footer-social-icon > a > i:hover {
+    background: #00a68c;
+    border: 0.5px solid #00a68c;
+    color: #fff;
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
 
+.social-icon {
+    margin-bottom: 30px;
+}
+
+.footer-text {
+    margin-bottom: 15px;
+}
+.footer-social-icon > a .active {
+    background: #fb397d;
+}
+
+.footer-menu ul li:last-child a {
+    border-right: 0 solid #ddd;
+}
+
+.footer-social-icon {
+    margin-bottom: 30px;
+}
+
+.footer-menu {
+    margin-bottom: 15px;
+}
 /*
 .home-content__scroll a:active {
     text-decoration: none;

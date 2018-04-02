@@ -7,24 +7,21 @@
 				<!-- Main -->
 				<main id="main" class="col-md-10">
 					<div class="blog">
+						<h2><%= @post.title %></h2>
+						<h5><%= @post.created_at %></h5>
 					  <div class="card post" data-post-id="<%= @post.id %>"> 
-              <div class="card-image">
-               <% if @post.image.url %> 
-                 <img src="<%= @post.image.url %>" /> 
-               <% end %> 
-              </div>
+			              <div class="card-image">
+			               <% if @post.image.url %> 
+			                 <img src="<%= @post.image.url %>" /> 
+			               <% end %> 
+			              </div>
 						</div>
 						<div class="blog-content-post">
-							<ul class="blog-meta">
-							  <!--작성 날짜, 시간-->
-								<li><i class="fa fa-clock-o"></i>18 Oct</li>
-							</ul>
-							<h3><%= @post.title %></h3>
 							<p><%= @post.content %></p>
 						</div>
 						<!-- blog tags -->
 						<div class="blog-tags">
-  						<h5>태그 :</h5>
+  						<h5>Tags :</h5>
 							<div class="blog-tags-icon"><i class="fa fa-tag"></i>Web</div>
 							<div class="blog-tags-icon"><i class="fa fa-tag"></i>Design</div>
 							<div class="blog-tags-icon"><i class="fa fa-tag"></i>Marketing</div>
@@ -34,59 +31,38 @@
 						</div>
 						<!-- blog tags -->
 						<!--List, edit, destroy-->
+					<br>
 						<div class="blog-tags-plus">
 						  <%= link_to '목록으로', posts_path%>
-              <%= link_to 'Edit', edit_post_path(@post) %> 
-              <%= link_to 'Destroy', @post, method: :delete, data: { confirm: 'Are you sure?' } %> 
-						</div>						
-            <p id="notice"><%= notice %></p>
-						<!-- blog author -->
-						<div class="blog-author">
-							<div class="media">
-								<div class="media-left">
-									<img class="media-object" src="/assets/images/moqa_logo_small.png" alt="">
-								</div>
-								<div class="media-body">
-									<div class="media-heading">
-										<h3><%= @post.name %></h3>
-										<div class="author-social">
-											<a href="#"><i class="fa fa-facebook"></i></a>
-											<a href="#"><i class="fa fa-twitter"></i></a>
-											<a href="#"><i class="fa fa-google-plus"></i></a>
-											<a href="#"><i class="fa fa-instagram"></i></a>
-										</div>
-									</div>
-									<p>Author Introduction</p>
-								</div>
-							</div>
-						</div>
-						<!-- /blog author -->
+			              <%= link_to 'Edit', edit_post_path(@post) %> 
+			              <%= link_to 'Destroy', @post, method: :delete, data: { confirm: 'Are you sure?' } %> 
+						</div>	
+					<br>
+            		<p id="notice"><%= notice %></p>
+					<!--Disqus 댓글-->
+					<div id="disqus_thread"></div>
+					<script>
+					
+					/**
+					*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+					*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+					/*
+					var disqus_config = function () {
+					this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+					this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+					};
+					*/
+					(function() { // DON'T EDIT BELOW THIS LINE
+					var d = document, s = d.createElement('script');
+					s.src = 'https://moqaapp.disqus.com/embed.js';
+					s.setAttribute('data-timestamp', +new Date());
+					(d.head || d.body).appendChild(s);
+					})();
+					</script>
+					<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+					                            
 					</div>
 				</div>
 			</div>
 		</div>	
-
-
-
-<!--<p>-->
-<!--  <strong>Title:</strong>-->
-<!--  <%#= @post.title %>-->
-<!--</p>-->
-
-<!--<p>-->
-<!--  <strong>Content:</strong>-->
-<!--  <%#= @post.content %>-->
-<!--</p>-->
-  
-<!--  <div class="card post" data-post-id="<%#= @post.id %>"> -->
-<!--    <div class="card-image">-->
-<!--     <%# if @post.image.url %> -->
-<!--       <img src="<%#= @post.image.url %>" /> -->
-<!--     <%# end %> -->
-<!--    </div>-->
-<!--  </div>-->
-
-
-<%#= link_to 'Edit', edit_post_path(@post) %> |
-<%#= link_to 'Back', posts_path %>
-<!--<p id="notice"><%#= notice %></p>-->
+<%=render 'footer' %>
