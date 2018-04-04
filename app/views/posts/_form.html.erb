@@ -23,10 +23,15 @@
     <%= f.label :내용 %><br>
     <%= f.text_area :content %>
   </div>
+  <div class="field">
+    <%= f.label :Tags %><br>
+    <%= f.text_field :tag_list, placeholder: "콤마로 구분" %>
+  </div>
   <div class="field"> 
     <%= f.label :썸네일 %><br>
     <%= f.file_field :image %>
   </div>
+  <br>
   <div class="actions">
     <%= f.submit %>
   </div>

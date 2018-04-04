@@ -337,7 +337,7 @@ header {
     margin-top: 0px;
     margin: 0 auto 30px;
     width: 300px;
-    height: 400px;
+    height: 450px;
     border-bottom: 1px solid #ccc;
 }
 .blog-box{
@@ -353,7 +353,7 @@ header {
 }
 
 .blog-content-post{
-    padding: 20px 20px 40px;
+    padding: 30px 0 30px 0;
 }
 .blog > .card{
     border: none !important;
@@ -434,7 +434,8 @@ header {
     color: #10161A;
 }
 .blog-tags-plus{
-    margin-top: 30px;
+    margin: 30px 0px 20px 20px;
+    float: right;
 
 }
 .blog-tags-plus a{
@@ -450,7 +451,7 @@ header {
 
 .blog-tags-plus a:hover{
   color: #FFF !important;
-  background-color: #6195FF;
+  background-color: #42c9a9;
   text-decoration: none;
 }
 
@@ -461,7 +462,7 @@ header {
 
 .blog-tags-icon:hover {
   color: #FFF;
-  background-color: #6195FF;
+  background-color: #42c9a9;
 }
 
 .blog-tags a i {
@@ -477,7 +478,7 @@ header {
 /* -- blog author -- */
 
 .blog-author {
-    margin: 40px 0px;
+    margin: 42px 0px;
 }
 
 .blog-author .media .media-left {
